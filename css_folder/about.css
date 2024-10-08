@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #200016;
+    
+}
+
+.header-aboutme{
+    text-align: center;
+    padding: 20px;
+    background-color: #200016;
+    color:#f4f4f4;
+    font-family: cursive;
+    animation: colorChange 5s infinite alternate;
+
+
+}
+
+.header-aboutme p {
+    font-size: large;
+    font-weight: 90;
+    
+}
+
+.about-me {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #200016;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.card {
+    background-color: #200016;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 2px;
+    width: 400px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h2 {
+    margin: 10px 0;
+    animation: colorChange 5s infinite alternate;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f07109;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.about-me-p {
+    margin: 20px;
+    font-family: cursive;
+    font-size: 30px;
+}
+
+.hobbies-list {
+    animation: colorChange 5s infinite alternate;
+    margin: 20px;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+
+/* ********** */
+
+/* Projects Section */
+.projects-section {
+    background: #200016;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-card {
+    background: #200016;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Media Query */
+@media (max-width: 768px) {
+    .projects-section, .about-me, .card {
+        margin: 10px;
+        width: 100%;
+    }
+}
+
+/* ********** */
+
+/* Card Styling */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+
+    .card {
+        width: 100%; /* Make cards take full width on smaller screens */
+        margin: 10px 0; /* Adds spacing between cards */
+    }
+
+    .card video {
+        height: auto; /* Adjust video height for small screens */
+    }
+}

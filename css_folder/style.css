@@ -1,0 +1,316 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    background: linear-gradient(#200016, #10001f);
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white; /* Set text color */
+}
+
+header {
+    background-color: #fff; /* Header background color */
+    color: #fff; /* Header text color */
+    padding: 2px; /* Padding for the header */
+}
+
+/* Navigation Styles */
+nav {
+    background: linear-gradient(#200016, #10001f);
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    animation: colorChange 4s infinite alternate;
+}
+
+label.logo:hover {
+    text-transform: uppercase;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+a.active,
+a.nav2:hover {
+    background: #f07109;
+    transition: 0.5s;
+}
+a.nav3:hover {
+    background: #f07109;
+    transition: 0.5s;
+}
+/* Responsive Styles */
+.checkbtn {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* Main Styles */
+.main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#moon {
+    mix-blend-mode: screen;
+    transform: translateY(50px);
+}
+
+.main::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top, #200016, transparent);
+}
+
+/* Secondary Main Part */
+.main-part2 {
+    background-color: #200016;
+    padding: 20px;
+    
+}
+
+/* Saad Name Animation */
+.saad {
+    font-size: 30px;
+    text-transform: uppercase;
+    animation: colorChange 4s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #ff7e5f;
+    }
+    50% {
+        color: #00ff7f;
+    }
+    75% {
+        color: gold;
+    }
+    100% {
+        color: #1e90ff;
+    }
+}
+
+/* Content Styles */
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin: 20px 0; /* Space between items */
+    width: 100%; /* Full width */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    text-align: center;
+    font-family: cursive;
+}
+
+.flex-item img {
+    width: 150px; /* Fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Rounded corners */
+     margin: 20px;
+}
+
+.flex-item div {
+    flex: 1; /* Take remaining space */
+    
+}
+
+.text-primary {
+    margin: 20px;
+    font-size: large;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.myname {
+    margin: 20px;
+    font-size: 50px;
+    animation: colorChange 4s infinite alternate;
+
+}
+
+.title-1 {
+    margin: 20px;
+}
+
+/* Social Media Links */
+.social {
+    margin-top: 30px; /* Space above social links */
+}
+
+.social a {
+    color: white; /* Icon color */
+    margin: 0 10px; /* Space between icons */
+    font-size: 24px; /* Size of icons */
+    transition: color 0.3s ease; /* Transition for hover effect */
+   
+}
+
+.social a.facebook:hover {
+     color: #0c10f0; /* Change color on hover */
+}
+
+.social a.email:hover {
+    color: #1e90ff;
+}
+
+.social a.whatsapp:hover {
+    color: #00ff7f;
+}
+
+.social a.github:hover {
+    color: gold;
+}
+
+.social a.instagram:hover {
+    color: rgb(240, 80, 80);
+}
+
+.social a.linkedin:hover {
+    color: rgb(72, 75, 218);
+}
+
+/* Button Styles */
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f07109; /* Button background */
+    color: white; /* Button text color */
+    border-radius: 5px; /* Rounded corners */
+    text-transform: uppercase; /* Uppercase text */
+    margin-top: 40px; /* Space above button */
+    transition: background-color 0.3s ease; /* Transition for hover */
+}
+
+.btn-primary:hover {
+    background-color: #17e717; /* Darker shade on hover */
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 50vh;
+        background: #054e30;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        z-index: 1000; /* Ensure it's above other elements */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    .flex-item {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center align */
+        text-align: center; /* Center text */
+    }
+
+}
+
+.footer-home {
+    text-align: center;
+    padding: 20px;
+    background-color: #f07109;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
