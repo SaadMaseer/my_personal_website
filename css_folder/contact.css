@@ -39,6 +39,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
+   
 }
 
 body {
@@ -47,27 +49,30 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+   
+    
 }
 
-.container {
+
+.container-contact {
     text-align: center;
-    background: white;
-    padding: 30px;
+    background: #200016;
+    padding: 50px;
     border-radius: 10px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-     max-width: 400px;
+     max-width: 900px;
+     color: aliceblue;
 }
 
-.container:hover {
+/* .container-contact:hover {
     transform: scale(1.05); 
-}
+} */
 
 .title {
     font-size: 2em;
-    margin-bottom: 20px;
-    color: #200016; /* Title color */
+   margin: 10px;
+    
     animation: colorChange 4s infinite alternate;
 }
 
@@ -83,41 +88,11 @@ body {
     }
 }
 
-.profile-image-container {
-    position: relative; /* Required for absolute positioning of overlay */
-    display: inline-block; /* Aligns the image with the overlay */
-}
 
-.profile-image {
-    width: 100px; /* Profile image size */
-    border-radius: 50%; /* Circular image */
-    transition: transform 0.3s ease; /* Smooth scaling effect */
-}
-
-.profile-image:hover {
-    transform: scale(1.05); /* Slightly enlarge image on hover */
-}
-
-.profile-image-container::after {
-    content: '';
-    position: absolute; /* Position overlay absolutely */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background:#10001f;
-    border-radius: 50%; /* Match the image shape */
-    opacity: 00; /* Start hidden */
-    transition: opacity 0.7s ease; /* Smooth transition */
-}
-
-.profile-image-container:hover::after {
-    opacity: 0.5; /* Show overlay on hover */
-}
 
 .about-me {
     margin-bottom: 20px;
-    color: #10001f; /* Text color */
+    color: #f9f9f9; /* Text color */
     text-transform: capitalize;
     font-weight: 16px;
 }
@@ -127,6 +102,8 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column; /* Stack vertically */
+    align-items: center;
+    
 }
 
 .contact-card {
@@ -136,6 +113,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
 }
 
 .contact-card:hover {
@@ -162,6 +140,8 @@ video {
     height: auto;
     border: 5px solid #ddd; /* Optional: Add a border around the video */
     border-radius: 10px; /* Optional: Rounded corners */
+    margin: 10px;
+    
 }
 
 
@@ -188,5 +168,80 @@ video {
     color: rgb(21, 101, 248); /* Violet for Email */
 }
 
+/* Navigation Styles */
+nav {
+    background: linear-gradient(#200016, #10001f);
+    height: 80px;
+    width: 100%;
+    margin: 10px;
+}
 
+label.logo {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 10px;
+    font-weight: bold;
+    animation: colorChange 4s infinite alternate;
+}
+
+label.logo:hover {
+    text-transform: uppercase;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 13px;
+    padding: 7px 11px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a.active,
+a.nav2:hover {
+    background: #f07109;
+    transition: 0.5s;
+}
+a.nav3:hover {
+    background: #f07109;
+    transition: 0.5s;
+}
+/* Responsive Styles */
+.checkbtn {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.footer-home {
+    text-align: center;
+    padding:15px;
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: #f07109;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 

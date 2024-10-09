@@ -1,0 +1,57 @@
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #200016, #10001f);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    margin-bottom: 30px;
+}
+
+/* Message Card Styles */
+.message-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition effects */
+}
+
+.message-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.message-card h2 {
+    margin-bottom: 10px;
+}
+
+.icon-container {
+    margin-top: 20px;
+}
+
+.icon-container i {
+    font-size: 50px; /* Icon size */
+    color: #ff7e5f; /* Icon color */
+}
+
+/* Footer Styles */
+footer {
+    margin-top: auto; /* Push footer to the bottom */
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+}
