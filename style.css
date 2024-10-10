@@ -166,6 +166,8 @@ a.nav3:hover {
     height: auto; /* Maintain aspect ratio */
     border-radius: 15px; /* Rounded corners */
      margin: 20px;
+     -webkit-user-drag: none; /* Prevent dragging the image in WebKit browsers */
+            user-drag: none;
 }
 
 .flex-item div {
