@@ -40,3 +40,6 @@ window.onscroll = function() {
         }
     }
 };
+
+// Disable right-click on the entire page
+document.addEventListener('contextmenu', event => event.preventDefault());
