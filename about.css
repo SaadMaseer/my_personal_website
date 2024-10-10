@@ -54,6 +54,8 @@ body {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    -webkit-user-drag: none; /* Prevent dragging the image in WebKit browsers */
+    user-drag: none;
 }
 
 .card h2 {
